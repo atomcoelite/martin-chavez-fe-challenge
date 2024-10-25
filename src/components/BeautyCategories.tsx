@@ -11,20 +11,20 @@ const categories = [
   { name: 'BROWS', image: '/images/beauty_products/5.png' },
   { name: 'MAKEUP', image: '/images/beauty_products/6.png' },
   { name: 'HAIR', image: '/images/beauty_products/7.png' },
-  { name: 'BEAUTY TOOLS', image: '/images/beauty_products/8.png' },
+  { name: 'BEAUTY TOOLS', image: '/images/beauty_products/8.png' }
 ]
 
 const featuredProducts = [
   {
     title: 'LIP COMBOS WE\'RE LOVING RIGHT NOW',
     image: '/images/beauty_bottom/1.png',
-    link: '/lip-combos',
+    link: '/lip-combos'
   },
   {
     title: 'OUR FAVORITE LIGHTWEIGHT MAKEUP ROUTINE',
     image: '/images/beauty_bottom/2.png',
-    link: '/makeup-routine',
-  },
+    link: '/makeup-routine'
+  }
 ]
 
 const BeautyCategories: React.FC = () => {
