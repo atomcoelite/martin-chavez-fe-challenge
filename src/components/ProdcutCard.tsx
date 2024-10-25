@@ -1,10 +1,10 @@
 import styles from '../styles/ProductCard.module.scss'
 
 type ProductProps = {
-  title: string;
-  price: number;
-  image: string;
-};
+  title: string
+  price: number
+  image: string
+}
 
 export default function ProductCard({ title, price, image }: ProductProps) {
   return (
@@ -14,5 +14,5 @@ export default function ProductCard({ title, price, image }: ProductProps) {
       <p>${price}</p>
       <button>Add to Bag</button>
     </div>
-  );
+  )
 }

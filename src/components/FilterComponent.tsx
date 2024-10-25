@@ -2,11 +2,11 @@ import { useRouter } from 'next/navigation'
 import styles from '../styles/FilterComponent.module.scss'
 
 export default function FilterComponent() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleFilterChange = (category: string) => {
-    router.push(`/search?category=${category}`);
-  };
+    router.push(`/search?category=${category}`)
+  }
 
   return (
     <div className={styles.filters}>
@@ -17,5 +17,5 @@ export default function FilterComponent() {
         <li onClick={() => handleFilterChange('hair')}>Hair</li>
       </ul>
     </div>
-  );
+  )
 }

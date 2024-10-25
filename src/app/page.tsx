@@ -16,5 +16,5 @@ export default function HomePage() {
       </section>
       <BeautyCategories />
     </div>
-  );
+  )
 }

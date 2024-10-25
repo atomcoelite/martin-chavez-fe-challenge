@@ -1,9 +1,9 @@
-import styles from '../styles/CategoryCard.module.scss';
+import styles from '../styles/CategoryCard.module.scss'
 
 type CategoryProps = {
-  title: string;
-  image: string;
-};
+  title: string
+  image: string
+}
 
 export default function CategoryCard({ title, image }: CategoryProps) {
   return (
@@ -11,5 +11,5 @@ export default function CategoryCard({ title, image }: CategoryProps) {
       <img src={image} alt={title} />
       <h3>{title}</h3>
     </div>
-  );
+  )
 }

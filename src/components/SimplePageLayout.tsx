@@ -2,9 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/SimplePageLayout.module.scss'
 
 type SimplePageLayout = {
-  title: string;
-  description: string;
-};
+  title: string
+  description: string
+}
 
 export default function SimplePageLayout({ title, description }: SimplePageLayout) {
   return (
@@ -18,5 +18,5 @@ export default function SimplePageLayout({ title, description }: SimplePageLayou
         <p className={styles.pageDescription}>{description}</p>
       </div>
     </>
-  );
+  )
 }

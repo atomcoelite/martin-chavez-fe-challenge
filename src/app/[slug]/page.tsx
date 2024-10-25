@@ -39,18 +39,18 @@ const pageData: { [key: string]: { title: string; description: string } } = {
     title: 'Body Care',
     description: 'Shop the best body care products for healthy and nourished skin.',
   },
-};
+}
 
 export default function DynamicPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+  const { slug } = params
 
   // If the slug doesn't exist in pageData, return a 404 page
   if (!pageData[slug]) {
-    notFound();
+    notFound()
   }
 
   // Get the content for the current page based on the slug
-  const { title, description } = pageData[slug];
+  const { title, description } = pageData[slug]
 
-  return <SimplePageLayout title={title} description={description} />;
+  return <SimplePageLayout title={title} description={description} />
 }
