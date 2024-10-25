@@ -13,7 +13,7 @@ function SearchBar() {
       <Search className={styles.searchIcon} />
       <input type="text" placeholder="Search by Brand, Product, or Category" className={styles.searchInput} />
     </div>
-  );
+  )
 }
 
 const Header: React.FC = () => {
