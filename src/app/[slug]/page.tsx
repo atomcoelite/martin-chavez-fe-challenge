@@ -4,7 +4,8 @@ import SimplePageLayout from '../../components/SimplePageLayout'
 const pageData: Record<string, { title: string; description: string }> = {
   marketplace: {
     title: 'Welcome to the Marketplace',
-    description: 'Explore and shop the best products across different categories.',
+    description:
+      'Explore and shop the best products across different categories.',
   },
   brands: {
     title: 'Brands A-Z',
@@ -38,7 +39,8 @@ const pageData: Record<string, { title: string; description: string }> = {
   },
   body: {
     title: 'Body Care',
-    description: 'Shop the best body care products for healthy and nourished skin.',
+    description:
+      'Shop the best body care products for healthy and nourished skin.',
   },
 }
 
