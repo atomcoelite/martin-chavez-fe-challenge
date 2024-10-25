@@ -11,20 +11,20 @@ const categories = [
   { name: 'BROWS', image: '/images/beauty_products/5.png' },
   { name: 'MAKEUP', image: '/images/beauty_products/6.png' },
   { name: 'HAIR', image: '/images/beauty_products/7.png' },
-  { name: 'BEAUTY TOOLS', image: '/images/beauty_products/8.png' }
+  { name: 'BEAUTY TOOLS', image: '/images/beauty_products/8.png' },
 ]
 
 const featuredProducts = [
   {
-    title: 'LIP COMBOS WE\'RE LOVING RIGHT NOW',
+    title: "LIP COMBOS WE'RE LOVING RIGHT NOW",
     image: '/images/beauty_bottom/1.png',
-    link: '/lip-combos'
+    link: '/lip-combos',
   },
   {
     title: 'OUR FAVORITE LIGHTWEIGHT MAKEUP ROUTINE',
     image: '/images/beauty_bottom/2.png',
-    link: '/makeup-routine'
-  }
+    link: '/makeup-routine',
+  },
 ]
 
 const BeautyCategories: React.FC = () => {
@@ -33,7 +33,12 @@ const BeautyCategories: React.FC = () => {
       <div className={styles.grid}>
         {categories.map((category, index) => (
           <div key={index} className={styles.category}>
-            <Image src={category.image} alt={category.name} width={300} height={300} />
+            <Image
+              src={category.image}
+              alt={category.name}
+              width={300}
+              height={300}
+            />
             <h2>{category.name}</h2>
           </div>
         ))}
@@ -41,7 +46,12 @@ const BeautyCategories: React.FC = () => {
       <div className={styles.featured}>
         {featuredProducts.map((product, index) => (
           <div key={index} className={styles.featuredProduct}>
-            <Image src={product.image} alt={product.title} width={600} height={400} />
+            <Image
+              src={product.image}
+              alt={product.title}
+              width={600}
+              height={400}
+            />
             <h3>{product.title}</h3>
             <Link href={product.link} className={styles.button}>
               VIEW PRODUCTS

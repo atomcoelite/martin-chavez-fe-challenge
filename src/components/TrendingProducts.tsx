@@ -22,7 +22,7 @@ const products: Product[] = [
     name: 'Addict Lip Glow Oil',
     options: 7,
     price: 36,
-    image: '/images/trending_products/1.png'
+    image: '/images/trending_products/1.png',
   },
   {
     id: '2',
@@ -30,7 +30,7 @@ const products: Product[] = [
     name: 'Lait-Cream Concentre',
     options: 2,
     price: 25,
-    image: '/images/trending_products/2.png'
+    image: '/images/trending_products/2.png',
   },
   {
     id: '3',
@@ -38,7 +38,7 @@ const products: Product[] = [
     name: 'Dream Coat Supernatural Spray',
     options: 2,
     price: 32,
-    image: '/images/trending_products/3.png'
+    image: '/images/trending_products/3.png',
   },
   {
     id: '4',
@@ -46,8 +46,8 @@ const products: Product[] = [
     name: 'Sun Melt Balm Bronzer - Fair Bronze',
     options: 5,
     price: 34,
-    image: '/images/trending_products/4.png'
-  }
+    image: '/images/trending_products/4.png',
+  },
 ]
 
 const TrendingProducts: React.FC = () => {
@@ -72,7 +72,10 @@ const TrendingProducts: React.FC = () => {
     <section className={styles.trendingProducts}>
       <h2>TRENDING PRODUCTS</h2>
       <div className={styles.carousel}>
-        <button className={styles.navButton} onClick={() => updateIndex(currentIndex - 1)}>
+        <button
+          className={styles.navButton}
+          onClick={() => updateIndex(currentIndex - 1)}
+        >
           <ChevronLeft />
         </button>
         <div className={styles.productGrid}>
@@ -82,7 +85,12 @@ const TrendingProducts: React.FC = () => {
               className={`${styles.productCard} ${index === currentIndex ? styles.active : ''}`}
             >
               <div className={styles.imageWrapper}>
-                <Image src={product.image} alt={product.name} width={200} height={200} />
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={200}
+                  height={200}
+                />
                 <span className={styles.commission}>15% Commission</span>
               </div>
               <div className={styles.productInfo}>
@@ -98,7 +106,10 @@ const TrendingProducts: React.FC = () => {
             </div>
           ))}
         </div>
-        <button className={styles.navButton} onClick={() => updateIndex(currentIndex + 1)}>
+        <button
+          className={styles.navButton}
+          onClick={() => updateIndex(currentIndex + 1)}
+        >
           <ChevronRight />
         </button>
       </div>

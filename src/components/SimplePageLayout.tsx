@@ -6,7 +6,10 @@ type SimplePageLayout = {
   description: string
 }
 
-export default function SimplePageLayout({ title, description }: SimplePageLayout) {
+export default function SimplePageLayout({
+  title,
+  description,
+}: SimplePageLayout) {
   return (
     <>
       <Head>

@@ -42,7 +42,6 @@ const pageData: Record<string, { title: string; description: string }> = {
   },
 }
 
-
 export default function DynamicPage({ params }: { params: { slug: string } }) {
   const { slug } = params
 
@@ -54,5 +53,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
   // Get the content for the current page based on the slug
   const { title, description } = pageData[slug]
 
-  return <SimplePageLayout title={title} description={description} />
+  return (
+    <SimplePageLayout title={title} description={description} />
+  )
 }

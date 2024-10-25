@@ -4,14 +4,17 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, Search, Heart, ShoppingBag, ChevronDown } from 'lucide-react'
-
 import styles from '../styles/Header.module.scss'
 
 function SearchBar() {
   return (
     <div className={styles.searchContainer}>
       <Search className={styles.searchIcon} />
-      <input type="text" placeholder="Search by Brand, Product, or Category" className={styles.searchInput} />
+      <input
+        type="text"
+        placeholder="Search by Brand, Product, or Category"
+        className={styles.searchInput}
+      />
     </div>
   )
 }
@@ -26,11 +29,20 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.topBar}>
-        <button className={styles.menuButton} onClick={toggleMenu} aria-label="Toggle menu">
+        <button
+          className={styles.menuButton}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           <Menu />
         </button>
         <Link href="/" className={styles.logo}>
-          <Image src="/images/logo.png" alt="Logo Img" width={185.22} height={35.5} />
+          <Image
+            src="/images/logo.png"
+            alt="Logo Img"
+            width={185.22}
+            height={35.5}
+          />
         </Link>
         <div className={styles.icons}>
           <button aria-label="Favorites">
@@ -41,7 +53,7 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-        <SearchBar />
+      <SearchBar />
       <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
         <div className={styles.navMenu}>
           <button className={styles.dropdownButton}>

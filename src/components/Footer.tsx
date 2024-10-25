@@ -10,22 +10,39 @@ const Footer: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.logo}>
-            <Image src="/images/logo.png" alt="Logo" width={193.03} height={37} />
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={193.03}
+              height={37}
+            />
             <div className={styles.links}>
               <div className={styles.column}>
                 <h3>Company</h3>
                 <ul>
-                  <li><Link href="/about">About Us</Link></li>
-                  <li><Link href="/create">Create a Shop</Link></li>
-                  <li><Link href="/media">Media</Link></li>
+                  <li>
+                    <Link href="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link href="/create">Create a Shop</Link>
+                  </li>
+                  <li>
+                    <Link href="/media">Media</Link>
+                  </li>
                 </ul>
               </div>
               <div className={styles.column}>
                 <h3>Support</h3>
                 <ul>
-                  <li><Link href="/help">Help Center</Link></li>
-                  <li><Link href="/contact">Contact</Link></li>
-                  <li><Link href="/brands">For Brands</Link></li>
+                  <li>
+                    <Link href="/help">Help Center</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link href="/brands">For Brands</Link>
+                  </li>
                 </ul>
               </div>
             </div>

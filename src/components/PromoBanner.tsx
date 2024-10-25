@@ -7,7 +7,12 @@ const PromoBanner: React.FC = () => {
     <section className={styles.promoBanner}>
       <div className={styles.content}>
         <div className={styles.icon}>
-          <Image src="/images/get_paid_mark.svg" width={200} height={200} alt="Get Paid Image"/>
+          <Image
+            src="/images/get_paid_mark.svg"
+            width={200}
+            height={200}
+            alt="Get Paid Image"
+          />
         </div>
         <div className={styles.text}>
           <h2>SHOP & SHARE ANY PRODUCT</h2>
@@ -15,7 +20,12 @@ const PromoBanner: React.FC = () => {
           <p>- LOOK FOR THE BADGE -</p>
         </div>
         <div className={styles.image}>
-          <Image src="/images/get_paid.png" width={200} height={200} alt="Model ImAGE"/>
+          <Image
+            src="/images/get_paid.png"
+            width={200}
+            height={200}
+            alt="Model ImAGE"
+          />
         </div>
       </div>
     </section>
