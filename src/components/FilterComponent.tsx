@@ -1,5 +1,5 @@
-import { useRouter } from 'next/navigation';
-import styles from '../styles/FilterComponent.module.scss';
+import { useRouter } from 'next/navigation'
+import styles from '../styles/FilterComponent.module.scss'
 
 export default function FilterComponent() {
   const router = useRouter();

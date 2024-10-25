@@ -1,8 +1,8 @@
-import MarketplaceBanners from '../components/MarketplaceBanners';
+import MarketplaceBanners from '../components/MarketplaceBanners'
 import TrendingProducts from '../components/TrendingProducts'
 import PromoBanner from '../components/PromoBanner'
-import BeautyCategories from '../components/BeautyCategories';
-import styles from '../styles/Home.module.scss';
+import BeautyCategories from '../components/BeautyCategories'
+import styles from '../styles/Home.module.scss'
 
 export default function HomePage() {
   return (

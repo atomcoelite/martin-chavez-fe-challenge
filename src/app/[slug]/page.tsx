@@ -1,5 +1,6 @@
-import { notFound } from 'next/navigation';
-import SimplePageLayout from '../../components/SimplePageLayout';
+import { notFound } from 'next/navigation'
+import SimplePageLayout from '../../components/SimplePageLayout'
+
 // Define the content for each page based on the slug
 const pageData: { [key: string]: { title: string; description: string } } = {
   marketplace: {

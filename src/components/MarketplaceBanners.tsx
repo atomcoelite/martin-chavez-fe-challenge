@@ -10,7 +10,7 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ imageSrc, altText }) => (
   <div className={styles.banner}>
-    <img src={imageSrc} alt={altText} />
+    <Image src={imageSrc} width={0} height={0} sizes="100vw"  style={{height: "100%", width:"400px"}} alt={altText} />
   </div>
 )
 
