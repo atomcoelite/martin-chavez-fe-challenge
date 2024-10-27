@@ -28,7 +28,10 @@ export default function RootLayout({
               const href = '/' + pathSegments.slice(0, index + 1).join('/')
               return (
                 <li key={segment}>
-                  <Link href={href} aria-current={index === pathSegments.length - 1 ? 'page' : undefined}>
+                  <Link
+                    href={href}
+                    aria-current={index === pathSegments.length - 1 ? 'page' : undefined}
+                  >
                     {segment.replace('-', ' ').charAt(0).toUpperCase() + segment.slice(1)}
                   </Link>
                 </li>
