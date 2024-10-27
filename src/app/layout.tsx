@@ -34,7 +34,10 @@ export default function RootLayout({
                       index === pathSegments.length - 1 ? 'page' : undefined
                     }
                   >
-                    {segment.replace('-', ' ').charAt(0).toUpperCase() + segment.slice(1)}
+                    {segment
+                      .replace('-', ' ')
+                      .charAt(0)
+                      .toUpperCase() + segment.slice(1)}
                   </Link>
                 </li>
               )
