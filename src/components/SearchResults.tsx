@@ -38,6 +38,46 @@ const initialProducts: Product[] = [
     price: 18,
     options: 2,
   },
+  {
+    id: '2',
+    name: 'Superfood Air-Whip Moisture Cream',
+    brand: 'Youth to the People',
+    image: '/images/products/2.png',
+    price: 18,
+    options: 2,
+  },
+  {
+    id: '3',
+    name: 'Superfood Air-Whip Moisture Cream',
+    brand: 'Youth to the People',
+    image: '/images/products/3.png',
+    price: 18,
+    options: 2,
+  },
+  {
+    id: '4',
+    name: 'Superfood Air-Whip Moisture Cream',
+    brand: 'Youth to the People',
+    image: '/images/products/4.png',
+    price: 18,
+    options: 2,
+  },
+  {
+    id: '5',
+    name: 'Superfood Air-Whip Moisture Cream',
+    brand: 'Youth to the People',
+    image: '/images/products/5.png',
+    price: 18,
+    options: 2,
+  },
+  {
+    id: '6',
+    name: 'Superfood Air-Whip Moisture Cream',
+    brand: 'Youth to the People',
+    image: '/images/products/6.png',
+    price: 18,
+    options: 2,
+  },
   // More products here...
 ]
 
@@ -50,11 +90,22 @@ const SearchResult: React.FC = () => {
 
   const [categories, setCategories] = useState<Category[]>([
     { name: 'Accessories', checked: true },
+    { name: 'BB & CC Cream', checked: true },
+    { name: 'Blush', checked: false },
+    { name: 'Bronzer', checked: true },
+    { name: 'Brow & Lash tools', checked: false },
+    { name: 'Brush Cleaners', checked: false },
+    { name: 'Brush Sets', checked: false },
+    { name: 'Color Correct', checked: true },
+    { name: 'Concealer', checked: false },
+    { name: 'Contour', checked: false },
     // More categories here...
   ])
 
   const sellers: Seller[] = [
     { name: 'ALEXANDRA RARE', image: '/images/sellers/1.png' },
+    { name: 'JESSICA RARES', image: '/images/sellers/2.png' },
+    { name: 'MEGAN RAREGENT', image: '/images/sellers/3.png' },
     // More sellers here...
   ]
 
