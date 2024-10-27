@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import SimplePageLayout from '../../components/SimplePageLayout'
+import SearchResult from '../../components/SearchResults'
 
 const pageData: Record<string, { title: string; description: string }> = {
   marketplace: {
@@ -52,8 +52,5 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-  // Get the content for the current page based on the slug
-  const { title, description } = pageData[slug]
-
-  return <SimplePageLayout title={title} description={description} />
+  return <SearchResult />
 }
